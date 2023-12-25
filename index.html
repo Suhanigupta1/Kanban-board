@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"  href="kanban-logo.jpg">
+    
+    
+    <title>
+        Kanban-board</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="input-container">
+    <input placeholder="Type your todo..." id="todo-input"/>
+    <button id="todo-button">Add</button>
+    </div>
+    <div class="board-container">  
+        <!-- To-do board -->
+        <div id='todo-board' class="boards">
+          <div class="nameOfTheBoard">
+            <div class="boardTitle" ><input class='boardcolor' type="color">
+            <h3>Todo</h3></div>
+            <!-- <h3 class="count">3</h3> -->
+          </div>
+            <p class="tasks" draggable="true">Task-1</p>
+            <p class="tasks" draggable="true">Task-2</p>
+            <p class="tasks" draggable="true">Task-3</p>
+        </div>
+        <!-- In-progress -->
+        <div class="boards">
+          <div class="nameOfTheBoard">
+            <div class="boardTitle" ><input class='boardcolor' type="color">
+            <h3>In-progress</h3></div>
+            <!-- <h3 class="count">3</h3> -->
+          </div>
+            <p class="tasks" draggable="true">Task-4</p>
+            <p class="tasks" draggable="true">Task-5</p>
+            <p class="tasks" draggable="true">Task-6</p>
+        </div>
+        <!-- completed -->
+        <div class="boards">
+          <div class="nameOfTheBoard">
+            <div class="boardTitle" ><input class='boardcolor' type="color">
+            <h3>Done</h3></div>
+            <!-- <h3 class="count">3</h3> -->
+          </div>
+          <p class="tasks" draggable="true">Task-7</p>
+          <p class="tasks" draggable="true">Task-8</p>
+          <p class="tasks" draggable="true">Task-9</p>
+        </div>
+    </div>
+    <script src="util.js"></script>
+    <script src="kanban.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
